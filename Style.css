@@ -14,31 +14,47 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; 
+}
+
+nav{
   background-color:#1db096;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width:100%;
+  background-color: #FFFFFF;
 }
 
 li {
-  float: right;
+  float: right ;
 }
 
 li a {
   display: block;
-  color: dimgrey;
-  text-align: center;
+  color: lightgray;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: lightgray;
+  background-color: #1db096;
+}
+
+.active, .btn:hover {
+  background-color:  #1db096 ;
+  color: white;
 }
 
 .model img{
   object-fit: contain;
   border-radius: 50%;
-   width:450px;
-  height: 450px;
+   width:500px;
+  height: 500px;
+ margin-top: 80px;
+ margin-bottom: 80px;
 }
 
 .content{
@@ -47,16 +63,18 @@ li a:hover {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  margin-top: 20px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  background-color: #1db096;
 }
 
 .main-text{
   width:500px;
+  color:#1c3548
 }
 
 h2{
-  font-size: 2.7rem;
-  color:#1c3548;
+  font-size: 2.8rem;
   margin:0px 0px 10px 0px;
   line-height: 60px;
 }
@@ -70,12 +88,13 @@ p {
   justify-content: center;
   align-items: center;
   color:white;
-  background-color: #1db096;
+  background-color: #23cdaf;
   border-radius: 20px;
   box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+  text-decoration: none;
 }
 .portfolio-btn:hover{
-  background-color: #23cdaf;
+  background-color: #1db096;
   transition: all ease 0.2s;
 }
 
@@ -83,6 +102,11 @@ p {
     padding: 25px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+footer {
+  background-color: #23cdaf;
+  height: 180px;
 }
 
 .fa {
@@ -93,8 +117,8 @@ p {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-   border-radius: 50%;
-   float: center;
+  border-radius: 50%;
+  float: center;
 }
 
 .fa:hover {
