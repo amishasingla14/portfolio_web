@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<head>
+	 <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body{
+		color: grey;
+		text-align: center;
+		font-family: sans-serif;
+	}
+	h1{
+		margin-top: 160px;
+	}
+	#back-btn{
+		color: #ef664d;
+		text-decoration: none;
+		text-align: center;
+		font-weight: bold;
+		border: solid 1px #ef664d;
+		padding: 10px 30px 10px 30px;
+		border-radius: 20px;
+		line-height: 70px;
+	}
+	#back-btn:hover{
+		color: white;
+		background-color:#ef664d;
+	}
+	h2{
+		margin-top: 70px;
+		font-size: 20px;
+	}
+	.fa {
+	padding: 10px;
+	font-size: 2em;
+	width: 20px;
+	height: 10px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	float: center;
+	color: grey;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+#toggle-btn{
+	background-color: white;
+	color: #ef664d;
+		text-decoration: none;
+		text-align: center;
+		font-weight: bold;
+		border: solid 1px #ef664d;
+		padding: 5px 15px 5px 15px;
+		border-radius: 20px;
+		margin-top: 10px;
+}
+#toggle-btn:hover{
+		color: white;
+		background-color:#ef664d;
+	}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+	</style>
+</head>
+<body>
+<script>
+	function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</body>
+<h1>
+	Thank you for contacting me!
+</h1>
+<p>
+	Your message has been received.
+</p>
+<p>
+	Will reach you out asap.
+</p>
+<a href="index.html" id="back-btn">Back to Portfolio</a>
+    <div id="contact"  width="100%">
+      <h2>Let's Connect!</h2>
+      <div align="center">
+        <a href="https://www.linkedin.com/in/amisha-singla-5a81b7200/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/amishasingla14" class="fa fa-github" style="font-size:36px"></a>
+        <a href="mailto:amishasingla.20@gmail.com" class="fa fa-google"></a>
+        <a href="https://secure.skype.com/portal/overview" class="fa fa-skype"></a>
+        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+      </div>
+      <div>
+	<button id="toggle-btn" onclick="myFunction()">Dark mode</button>
+</div>
+</html>
