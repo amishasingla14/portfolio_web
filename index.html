@@ -1,324 +1,259 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta property="og:image"
-          content="https://st2.depositphotos.com/1032577/6582/i/950/depositphotos_65828845-stock-photo-portfolio-written-on-notebook.jpg">
+      content="https://st2.depositphotos.com/1032577/6582/i/950/depositphotos_65828845-stock-photo-portfolio-written-on-notebook.jpg">
     <meta property="og:title" content="Amisha Singla's Portfolio">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Style.css">
     <title>Amisha Singla</title>
-</head>
+  </head>
+  <body>
+    <script>
+ function validateform(){
+ /*validate firstname*/  
+var firstname=document.myform.firstname.value;
+if(firstname==null || firstname=="")
+{  
+  alert("Name required");  
+  return false;  
+}
+/*validate email*/ 
+var email = document.myform.email.value;
+         atpos = email.indexOf("@");
+         dotpos = email.lastIndexOf(".");
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter valid email ID")
+            document.myform.email.focus() ;
+            return false;
+         }
+         return( true );
+/*validate contact number*/ 
+var contact=document.myform.contact.value;
+if(contact==null || contact=="")
+{  
+  alert("Enter valid number");  
+  return false;  
+}
+       }
+/*toggle dark/light mode*/
+ function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 <body>
-    <nav>
-    <ul>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#projects">PROJECTS & SKILLS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#home">HOME</a></li>
-    </ul>
-</nav>
+  <!--Home--> 
     <div class="content" id="home">
-     <div class="model">
-            <img src="https://www.w3schools.com/howto/img_avatar2.png">
-        </div>
-           <div class="main-text">
-            <h2>Hello, I am Amisha Singla</h2>
-            <h3>Full Stack Developer | Intern at Cyber Group</h3>
-            <a href="#contact" class="portfolio-btn">Contact Me</a>
-        </div>
+      <nav>
+        <p id="logo">Amisha Singla</p>
+        <ul>
+          <li><button id="toggle-btn" onclick="myFunction()">Dark mode</button></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a class="active" href="#home">HOME</a></li>
+        </ul>
+      </nav>
+      <div class="main-text">
+        <h2>HELLO,</h2>
+        <h3><span>I AM </span>FULL STACK DEVELOPER</h3>
+        <a href="#contact" class="portfolio-btn">CONTACT ME</a>
+      </div>
     </div>
-    <div id="about">
-        <table bgcolor="white">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                       cellspacing="0" width="80%" align="center">
-                    <tr>
-                        <td align="center"
-                            valign="middle" colspan="2">
-                            <font face="Verdana" size="7"
-                                  color="#1db096">
-                                ABOUT ME
-                            </font>
-                            <hr color="#1db096" width="90">
-                        </td>
-                    </tr>
-                  
-                    <tr>
-                        <td width="60%">
-                            <font face="Verdana" size="4"
-                                  color="black">
-                                Motivated fresher willing to work in an environment that gives scope to enhance my knowledge, skills and provides generous opportunities for advancement and to succeed. I am a person who believes in perseverance and dedication. To obtain a challenging position that fully utilizes my skills and provides me with suitable opportunities to grow my technical and communication skills which would help me as a fresher to grow while working towards the organizational goals.
-                               <br>
-                               <br>
-                                <a href="Amishasingla_Resume.pdf" class="portfolio-btn">Resume</a>
-                        </td>
-                        <td>
-                            <img src="https://seo-trench.com/wp-content/uploads/2019/11/12-Websites-You-Should-Check-Out-to-Learn-Web-Development-Fast.png" width="100%">
-                        </td>
-                    </tr>
-            </font>
-                </table>
+    <!--Home ends-->
+    <!--about me-->
+    <table id="about" border="0" cellspacing="50" width="90%" align="center">
+      <tr>
+        <td rowspan="2" class="model">
+          <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="display image">
         </td>
-    </tr>
-</table>
-</div>
-    <hr color="white">
-<center>
-<table id="projects" cellpadding="10" cellspacing="15">
-    <tr>
-    <td>
-     <font face="Verdana" size="7"color="#1db096">
-      PROJECTS
+        <td >
+          <h4>ABOUT</h4>
+          <p style="text-align:center;"><font size="4"color="grey">
+            Motivated fresher willing to work in an environment that gives scope to enhance my knowledge, skills and provides generous opportunities for advancement and to succeed. I am a person who believes in perseverance and dedication.
+            <br> 
+            To obtain a challenging position that fully utilizes my skills and provides me with suitable opportunities to grow my technical and communication skills which would help me as a fresher to grow while working towards the organizational goals.
+          </p>
+          <a href="AmishaSingla_Resume.pdf" class="portfolio-btn">Download Resume</a>
+          </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="about-desc" cellspacing="10" cellpadding="10">
+            <tr>
+              <td class="info">
+                <b>Age : </b>
+                <span id="info-desc">21</span>
+              </td>
+              <td class="info">
+                <b>Location : </b>
+                <span id="info-desc">Panchkula, India</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="info">
+                <b>Degree : </b>
+                <span id="info-desc">Bachelor in Computer Science</span>
+              </td>
+              <td class="info">
+                <b>Skype : </b>
+                <a href="tel:live:.cid.c04e026112a1d55f" id="info-desc">amishasingla</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="info">
+                <b>Phone : </b>
+                <a href="tel:+91-8968003445" id="info-desc">+91-8969003445</a>
+              </td>
+              <td class="info">
+                <b>Mail : </b>
+                <a href="mailto:amishasingla.20@gmail.com" id="info-desc">amishasingla.20@gmail.com</a>
+              </td>
+              <td>
+                <div>
+                  <a href="#projects" title="Scroll to Projects" class="scroll-up-btn">&#8595;</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
       </font>
-  </td>
-    <td>
-     <font face="Verdana" size="7" color="#1db096">
-     SKILLS
-     </font>
- </td>
-    </tr>
-    <tr>
-    <td>
-        <dl>
-            <dt>
-                <b>Domain: JavaScript | Web: HTML, CSS</b>
-            </dt>
-     <dd> Developed a Fashion blog website.</dd>
-                                                <dd>Developed the front-end part only using various web
-                                                </dd>
-                                                </dl> 
-                                    </td>
-                                    <td>
-                                        <dl>
-                                        <dt><b>Programming Languages: </b></dt>
-                                        <dd>
-                                                C, Java
-                                          </dd>
-                                      </dl>
-                                    <tr>
-                                        <td>
-                                            <dl>
-                                                <dt>
-                                          <b>Domain: Website</b>
-                                      </dt>
-                                        <dd>
-                                                Developed a affiliated website based on selling athleisure products.
-                                            </dd>
-                                            <dd>
-                                                It was live on web search under the domain name "athlefit.com" for one whole year.
-                                           </dd>
-                                       </dl>
-                                        </td> 
-                                        <td>
-                                            <dl>
-                                                <dt>
-                                        <b>Web Design: </b>
-                                    </dt>
-                                        <dd>
-                                                CSS, HTML5, JavaScript, Bootstrap4 
-                                            </dd>
-                                        </dl>
-                                  </td>
-                                        </tr>
-                                        <tr>
-                                        <td>
-                                            <dl>
-                                                <dt>
-                                        <b>Domain: JavaScript | Web: HTML, CSS</b>
-                                    </dt>
-                                    <dd>
-                                                Developed a Pomodoro Clock.
-                                           </dd>
-                                           <dd>
-                                                It was developed to set time for work and break.
-                                           </dd>
-                                       </dl>
-                                        </td>
-                                        <td>
-                                            <dl>
-                                                <dt>
-                                        <b>Database:</b>
-                                    </dt>
-                                       <dd>
-                                                SQL
-                                            </dd>
-                                            </dt>
-                                            <dl>
-                                                <dt>
-
-                                         <b>IT Constructs:</b>
-                                        </dt>
-                                        <dd>
-                                                OOPs, DBMS, OS
-</dd>
-</dl>    
-            </td>
-                                        </tr>
-
-                                    </table>
-                                </center>
-<hr color="black">
-    <table id="contact" style="background-image: url('https://gobiva.com/wp-content/uploads/2014/06/about-us-background-3.jpg');" border="0" width="100%"
-           cellpadding="0" cellspacing="0">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                       cellspacing="0" width="80%" align="center">
-                    <tr>
-                        <td height="180" align="center"
-                            valign="middle" colspan="2">
-                            <font face="Verdana" size="7"
-                                  color="MediumAquamarine">
-                                Contact
-                            </font>
-                            <hr color="MediumAquamarine" width="90">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="center" valign="top">
-                            <table border="0" width="50%" cellpadding="15"
-                                   cellspacing="0" align="center" bgcolor="">
-                                <tr>
-                                    <td width="30%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            Name
-                                        </font>
-                                    </td>
-                                    <td width="70%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            <input type="text" size="40">
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="30%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            Email
-                                        </font>
-                                    </td>
-                                    <td width="70%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            <input type="email" size="40">
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="30%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            Gender
-                                        </font>
-                                    </td>
-                                    <td width="70%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            <input type="radio">F
-                                            <input type="radio">M
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="30%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            DOB
-                                        </font>
-                                    </td>
-                                    <td width="70%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            <input type="date" name="birthday">
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="30%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            Mobile
-                                        </font>
-                                    </td>
-                                    <td width="70%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            <input type="number" size="12">
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="30%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            Message
-                                        </font>
-                                    </td>
-                                    <td width="70%">
-                                        <font face="Verdana" size="4"
-                                              color="black">
-                                            <textarea rows="5"
-                                                      cols="37">
-                                            </textarea>
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="30%"></td>
-                                    <td width="70%">
-                                        <button type="Submit">
-                                            <font face="Verdana"
-                                                  size="4" color="black">
-                                                <a href="#home" color="black">
-                                                    <b>Submit</b>
-                                            </font>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td colspan="2"></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
     </table>
-    </center>
-    <footer>
-        <center>
-            <div>
-            <a href="https://www.linkedin.com/in/amisha-singla-5a81b7200/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/amishasingla14" class="fa fa-github" style="font-size:36px"></a>
-            <a href="mailto:amishasingla.20@gmail.com" class="fa fa-google"></a>
-            <a href="https://secure.skype.com/portal/overview" class="fa fa-skype"></a>
-              <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+    <!--about section end-->
+    <!--Projects-->
+    <section id="projects">
+      <h4>PROJECTS</h4>
+      <div class="project-head">
+        <div class="project-desc">
+          <h5>Domain: Website</h5>
+          <p>
+            Developed a affiliated website based on selling athleisure products.
+            It was live on web search under the domain name "athlefit.com" for one whole
+            year
+          </p>
+        </div>
+        <div class="project-desc">
+          <h5>Domain: JavaScript | Web: HTML, CSS</h5>
+          <p>
+            Developed a Pomodoro Clock.
+            It was developed to set time for work and break.
+          </p>
+        </div>
+        <div class="project-desc">
+          <h5>Domain: JavaScript | Web: HTML, CSS</h5>
+          <p>
+            Developed a Fashion blog website.
+            Developed the front-end part only using various web technologies
+          </p>
+        </div>
+      </div>
+      <div>
+        <a href="#skills" title="Scroll to Skills" class="scroll-up-btn">&#8595;</a> 
+      </div>
+    </section>
+    <!--projects section ends-->
+    <!--Skills-->
+    <section id="skills">
+      <h4>SKILLS</h4>
+      <center>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190516163038/Andriod-Programming-Languages.png" alt="Avatar" style="width:340px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Prrogramming Languages:</h1>
+              <p>C</p>
+              <p>Java</p>
+            </div>
           </div>
-        </center>
-        <div class="d-flex justify-content-center mb-3" align="center">
-            <a class="text-white" href="#">Privacy</a>
-            <span class="px-3">|</span>
-            <a class="text-white" href="#">Terms</a>
-            <span class="px-3">|</span>
-            <a class="text-white" href="#">FAQs</a>
-            <span class="px-3">|</span>
-            <a class="text-white" href="#">Help</a>
-        </div><center>
-            <p class="m-0">
-                &copy; <a class="text-white font-weight-bold" href="#">Amisha Singla</a>. All Rights
-                Reserved. Designed by <a class="text-white font-weight-bold" href="#">Amisha Singla</a>
-            </p>
-        </center>
-    </footer>
-   
-</body>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://codearbro.com/wp-content/uploads/2020/02/images-2B-25282-2529-1280x720.jpg" alt="Avatar" style="width:340px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Web Technologies:</h1>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://thumbs.dreamstime.com/b/database-written-chalkboard-conceptual-image-word-database-database-written-chalkboard-conceptual-image-word-114725336.jpg" alt="Avatar" style="width:340px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Database:</h1>
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="#contact" title="Scroll to Get in touch" class="scroll-up-btn">&#8595;</a>
+        </div>
+      </center>
+    </section>
+    <!--skills section end-->
+    <!--contact info-->                        
+    <div id="contact"  width="100%">
+      <h4>Get In Touch</h4>
+      <p id="context">I would love to hear from you. Here's how you can reach me...</p>
+      <div align="center">
+        <a href="https://www.linkedin.com/in/amisha-singla-5a81b7200/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/amishasingla14" class="fa fa-github" style="font-size:36px"></a>
+        <a href="mailto:amishasingla.20@gmail.com" class="fa fa-google"></a>
+        <a href="https://secure.skype.com/portal/overview" class="fa fa-skype"></a>
+        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+      </div>
+      <div class="container">
+     <form name="myform" method="post" action="valid.html" onsubmit="return validateform()" >  
+ <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com">
+          <label for="mobile">Mobile</label>
+           <input type="text" id="mobile" name="contact" placeholder="0000-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="usa">India</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="[SEND MESSAGE]"> 
+      </div>
+      <hr width="90%" align="center">
+      <center>
+      <p>
+        &copy;
+        <a href="#">
+        <font color="#ef664d">
+        Amisha Singla
+        </font>
+        </a>
+        All Rights Reserved | Designed by
+        <a href="#">
+        <font color="#ef664d">
+        Amisha Singla
+        </font>
+        </a>
+         <div>
+        <a href="#home" title="Scroll to top" class="scroll-up-btn">&#8593;</a> 
+      </div>
+      </p>
+    </div>
+  </center>
+</form>
+    <!--contact ends-->
+  </body>
 </html>
