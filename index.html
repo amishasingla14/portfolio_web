@@ -12,229 +12,229 @@
   </head>
   <body>
     <script>
- function validateform(){
- /*validate firstname*/  
-var firstname=document.myform.firstname.value;
-if(firstname==null || firstname=="")
-{  
-  alert("Name required");  
-  return false;  
-}
-/*validate email*/ 
-var email = document.myform.email.value;
-         atpos = email.indexOf("@");
-         dotpos = email.lastIndexOf(".");
-         if (atpos < 1 || ( dotpos - atpos < 2 )) {
-            alert("Please enter valid email ID")
-            document.myform.email.focus() ;
-            return false;
-         }
-         return( true );
-/*validate contact number*/ 
-var contact=document.myform.contact.value;
-if(contact==null || contact=="")
-{  
-  alert("Enter valid number");  
-  return false;  
-}
-       }
-/*toggle dark/light mode*/
- function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-<body>
-  <!--Home--> 
-    <div class="content" id="home">
-      <nav>
-        <p id="logo">Amisha Singla</p>
-        <ul>
-          <li><button id="toggle-btn" onclick="myFunction()">Dark mode</button></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a class="active" href="#home">HOME</a></li>
-        </ul>
-      </nav>
-      <div class="main-text">
-        <h2>HELLO,</h2>
-        <h3><span>I AM </span>FULL STACK DEVELOPER</h3>
-        <a href="#contact" class="portfolio-btn">CONTACT ME</a>
-      </div>
-    </div>
-    <!--Home ends-->
-    <!--about me-->
-    <table id="about" border="0" cellspacing="50" width="90%" align="center">
-      <tr>
-        <td rowspan="2" class="model">
-          <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="display image">
-        </td>
-        <td >
-          <h4>ABOUT</h4>
-          <p style="text-align:center;"><font size="4"color="grey">
-            Motivated fresher willing to work in an environment that gives scope to enhance my knowledge, skills and provides generous opportunities for advancement and to succeed. I am a person who believes in perseverance and dedication.
-            <br> 
-            To obtain a challenging position that fully utilizes my skills and provides me with suitable opportunities to grow my technical and communication skills which would help me as a fresher to grow while working towards the organizational goals.
-          </p>
-          <a href="AmishaSingla_Resume.pdf" class="portfolio-btn">Download Resume</a>
-          </font>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class="about-desc" cellspacing="10" cellpadding="10">
-            <tr>
-              <td class="info">
-                <b>Age : </b>
-                <span id="info-desc">21</span>
-              </td>
-              <td class="info">
-                <b>Location : </b>
-                <span id="info-desc">Panchkula, India</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="info">
-                <b>Degree : </b>
-                <span id="info-desc">Bachelor in Computer Science</span>
-              </td>
-              <td class="info">
-                <b>Skype : </b>
-                <a href="tel:live:.cid.c04e026112a1d55f" id="info-desc">amishasingla</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="info">
-                <b>Phone : </b>
-                <a href="tel:+91-8968003445" id="info-desc">+91-8969003445</a>
-              </td>
-              <td class="info">
-                <b>Mail : </b>
-                <a href="mailto:amishasingla.20@gmail.com" id="info-desc">amishasingla.20@gmail.com</a>
-              </td>
-              <td>
-                <div>
-                  <a href="#projects" title="Scroll to Projects" class="scroll-up-btn">&#8595;</a>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      </font>
-    </table>
-    <!--about section end-->
-    <!--Projects-->
-    <section id="projects">
-      <h4>PROJECTS</h4>
-      <div class="project-head">
-        <div class="project-desc">
-          <h5>Domain: Website</h5>
-          <p>
-            Developed a affiliated website based on selling athleisure products.
-            It was live on web search under the domain name "athlefit.com" for one whole
-            year
-          </p>
-        </div>
-        <div class="project-desc">
-          <h5>Domain: JavaScript | Web: HTML, CSS</h5>
-          <p>
-            Developed a Pomodoro Clock.
-            It was developed to set time for work and break.
-          </p>
-        </div>
-        <div class="project-desc">
-          <h5>Domain: JavaScript | Web: HTML, CSS</h5>
-          <p>
-            Developed a Fashion blog website.
-            Developed the front-end part only using various web technologies
-          </p>
+      function validateform(){
+      /*validate firstname*/  
+      var firstname=document.myform.firstname.value;
+      if(firstname==null || firstname=="")
+      {  
+       alert("Name required");  
+       return false;  
+      }
+      /*validate email*/ 
+      var email = document.myform.email.value;
+              atpos = email.indexOf("@");
+              dotpos = email.lastIndexOf(".");
+              if (atpos < 1 || ( dotpos - atpos < 2 )) {
+                 alert("Please enter valid email ID")
+                 document.myform.email.focus() ;
+                 return false;
+              }
+              return( true );
+      /*validate contact number*/ 
+      var contact=document.myform.contact.value;
+      if(contact==null || contact=="")
+      {  
+       alert("Enter valid number");  
+       return false;  
+      }
+            }
+      /*toggle dark/light mode*/
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    <body>
+      <!--Home--> 
+      <div class="content" id="home">
+        <nav>
+          <p id="logo">Amisha Singla</p>
+          <ul>
+            <li><button id="toggle-btn" onclick="myFunction()">Dark mode</button></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a class="active" href="#home">HOME</a></li>
+          </ul>
+        </nav>
+        <div class="main-text">
+          <h2>HELLO,</h2>
+          <h3><span>I AM </span>FULL STACK DEVELOPER</h3>
+          <a href="#contact" class="portfolio-btn">CONTACT ME</a>
         </div>
       </div>
-      <div>
-        <a href="#skills" title="Scroll to Skills" class="scroll-up-btn">&#8595;</a> 
-      </div>
-    </section>
-    <!--projects section ends-->
-    <!--Skills-->
-    <section id="skills">
-      <h4>SKILLS</h4>
-      <center>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190516163038/Andriod-Programming-Languages.png" alt="Avatar" style="width:340px;height:300px;">
-            </div>
-            <div class="flip-card-back">
-              <h1>Prrogramming Languages:</h1>
-              <p>C</p>
-              <p>Java</p>
-            </div>
+      <!--Home ends-->
+      <!--about me-->
+      <table id="about" border="0" cellspacing="50" width="90%" align="center">
+        <tr>
+          <td rowspan="2" class="model">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="display image">
+          </td>
+          <td >
+            <h4>ABOUT</h4>
+            <p style="text-align:center;"><font size="4"color="grey">
+              Motivated fresher willing to work in an environment that gives scope to enhance my knowledge, skills and provides generous opportunities for advancement and to succeed. I am a person who believes in perseverance and dedication.
+              <br> 
+              To obtain a challenging position that fully utilizes my skills and provides me with suitable opportunities to grow my technical and communication skills which would help me as a fresher to grow while working towards the organizational goals.
+            </p>
+            <a href="AmishaSingla_Resume.pdf" class="portfolio-btn">Download Resume</a>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="about-desc" cellspacing="10" cellpadding="10">
+              <tr>
+                <td class="info">
+                  <b>Age : </b>
+                  <span id="info-desc">21</span>
+                </td>
+                <td class="info">
+                  <b>Location : </b>
+                  <span id="info-desc">Panchkula, India</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="info">
+                  <b>Degree : </b>
+                  <span id="info-desc">Bachelor in Computer Science</span>
+                </td>
+                <td class="info">
+                  <b>Skype : </b>
+                  <a href="tel:live:.cid.c04e026112a1d55f" id="info-desc">amishasingla</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="info">
+                  <b>Phone : </b>
+                  <a href="tel:+91-8968003445" id="info-desc">+91-8969003445</a>
+                </td>
+                <td class="info">
+                  <b>Mail : </b>
+                  <a href="mailto:amishasingla.20@gmail.com" id="info-desc">amishasingla.20@gmail.com</a>
+                </td>
+                <td>
+                  <div>
+                    <a href="#projects" title="Scroll to Projects" class="scroll-up-btn">&#8595;</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        </font>
+      </table>
+      <!--about section end-->
+      <!--Projects-->
+      <section id="projects">
+        <h4>PROJECTS</h4>
+        <div class="project-head">
+          <div class="project-desc">
+            <h5>Domain: Website</h5>
+            <p>
+              Developed a affiliated website based on selling athleisure products.
+              It was live on web search under the domain name "athlefit.com" for one whole
+              year
+            </p>
           </div>
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://codearbro.com/wp-content/uploads/2020/02/images-2B-25282-2529-1280x720.jpg" alt="Avatar" style="width:340px;height:300px;">
-            </div>
-            <div class="flip-card-back">
-              <h1>Web Technologies:</h1>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
+          <div class="project-desc">
+            <h5>Domain: JavaScript | Web: HTML, CSS</h5>
+            <p>
+              Developed a Pomodoro Clock.
+              It was developed to set time for work and break.
+            </p>
           </div>
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://thumbs.dreamstime.com/b/database-written-chalkboard-conceptual-image-word-database-database-written-chalkboard-conceptual-image-word-114725336.jpg" alt="Avatar" style="width:340px;height:300px;">
-            </div>
-            <div class="flip-card-back">
-              <h1>Database:</h1>
-              <p>SQL</p>
-            </div>
+          <div class="project-desc">
+            <h5>Domain: JavaScript | Web: HTML, CSS</h5>
+            <p>
+              Developed a Fashion blog website.
+              Developed the front-end part only using various web technologies
+            </p>
           </div>
         </div>
         <div>
-          <a href="#contact" title="Scroll to Get in touch" class="scroll-up-btn">&#8595;</a>
+          <a href="#skills" title="Scroll to Skills" class="scroll-up-btn">&#8595;</a> 
         </div>
-      </center>
-    </section>
-    <!--skills section end-->
-    <!--contact info-->                        
-    <div id="contact"  width="100%">
-      <h4>Get In Touch</h4>
-      <p id="context">I would love to hear from you. Here's how you can reach me...</p>
-      <div align="center">
-        <a href="https://www.linkedin.com/in/amisha-singla-5a81b7200/" class="fa fa-linkedin"></a>
-        <a href="https://github.com/amishasingla14" class="fa fa-github" style="font-size:36px"></a>
-        <a href="mailto:amishasingla.20@gmail.com" class="fa fa-google"></a>
-        <a href="https://secure.skype.com/portal/overview" class="fa fa-skype"></a>
-        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
-      </div>
-      <div class="container">
-     <form name="myform" method="get" action="index2.html" onsubmit="return validateform()" >  
- <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your First name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="jane@example.com">
-          <label for="mobile">Mobile</label>
-           <input type="text" id="mobile" name="contact" placeholder="0000-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="usa">India</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          <input type="submit" value="[SEND MESSAGE]"> 
-      </div>
-      <hr width="90%" align="center">
-      <center>
-      <p>
+      </section>
+      <!--projects section ends-->
+      <!--Skills-->
+      <section id="skills">
+        <h4>SKILLS</h4>
+        <center>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190516163038/Andriod-Programming-Languages.png" alt="Avatar" style="width:340px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Prrogramming Languages:</h1>
+                <p>C</p>
+                <p>Java</p>
+              </div>
+            </div>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://codearbro.com/wp-content/uploads/2020/02/images-2B-25282-2529-1280x720.jpg" alt="Avatar" style="width:340px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Web Technologies:</h1>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://thumbs.dreamstime.com/b/database-written-chalkboard-conceptual-image-word-database-database-written-chalkboard-conceptual-image-word-114725336.jpg" alt="Avatar" style="width:340px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Database:</h1>
+                <p>SQL</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#contact" title="Scroll to Get in touch" class="scroll-up-btn">&#8595;</a>
+          </div>
+        </center>
+      </section>
+      <!--skills section end-->
+      <!--contact info-->                        
+      <div id="contact"  width="100%">
+        <h4>Get In Touch</h4>
+        <p id="context">I would love to hear from you. Here's how you can reach me...</p>
+        <div align="center">
+          <a href="https://www.linkedin.com/in/amisha-singla-5a81b7200/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/amishasingla14" class="fa fa-github" style="font-size:36px"></a>
+          <a href="mailto:amishasingla.20@gmail.com" class="fa fa-google"></a>
+          <a href="https://secure.skype.com/portal/overview" class="fa fa-skype"></a>
+          <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+        </div>
+        <div class="container">
+          <form name="myform" method="post" action="index2.html" onsubmit="return validateform()" >
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com">
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="contact" placeholder="0000-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="usa">India</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" value="[SEND MESSAGE]"> 
+        </div>
+        <hr width="90%" align="center">
+        <center>
+        <p>
         &copy;
         <a href="#">
         <font color="#ef664d">
@@ -247,13 +247,13 @@ if(contact==null || contact=="")
         Amisha Singla
         </font>
         </a>
-         <div>
+        <div>
         <a href="#home" title="Scroll to top" class="scroll-up-btn">&#8593;</a> 
+        </div>
+        </p>
       </div>
-      </p>
-    </div>
-  </center>
-</form>
-    <!--contact ends-->
+      </center>
+      </form>
+      <!--contact ends-->
   </body>
 </html>
